@@ -1,4 +1,4 @@
-name: 15a Hello World
+name: 15a Hello World  # rename as action.yaml to use it
 description: A simple "Hello World" action using Docker python.
 inputs:
   name:

@@ -1,0 +1,16 @@
+name: 15b Dice throwing
+description: A simple dice throwing action using Docker python.
+inputs:
+  dice-order:
+    description: Number of dices to throw
+    required: true
+    default: two
+    type: string
+outputs:
+  dice1:
+    description: number of the first dice
+  dice2:
+    description: number of the second dice
+runs:
+  using: 'docker'
+  image: 'Dockerfile'  # docker://debian:stretch-slim
