@@ -1,0 +1,14 @@
+name: 15a Hello World
+description: A simple "Hello World" action using Docker python.
+inputs:
+  name:
+    description: 'Name to greet'
+    required: true
+    default: Pope
+    type: string
+outputs:
+  greeting:
+    description: 'The greeting message'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'  # docker://debian:stretch-slim
